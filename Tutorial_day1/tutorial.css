@@ -1,0 +1,13 @@
+.burning-text {
+    font-size: 60px;
+    font-weight: bold;
+    background: url('fire-burn.gif');
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    /* Bonus */
+    text-shadow: 0 0 30px #ff6600, 0 0 20px #ff3300;
+}
