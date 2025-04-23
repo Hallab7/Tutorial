@@ -1,0 +1,33 @@
+
+.glow-on-hover {
+    position: relative;
+    padding: 10px 30px;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    font-weight: bold;
+}
+.glow-on-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+.glow-on-hover:hover::before {
+    transform: scaleX(1);
+}
+.glow-on-hover:hover {
+    color: black;
+}
+
+/* Bonus */
+.glow-on-hover::before {
+    transform: scaleY(0);
+}
